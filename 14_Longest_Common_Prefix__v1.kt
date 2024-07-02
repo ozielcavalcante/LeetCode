@@ -1,9 +1,9 @@
-fun longestCommonPrefix(vararg strs: String): String {
+fun longestCommonPrefix(vararg words: String): String {
     var count = 0
     var res = ""
     while (true) {
-        strs.forEach { if (it.length == count || it[count] != strs[0][count]) return res }
-        res += strs[0][count]
+        words.forEach { if (it.length == count || it[count] != words[0][count]) return res }
+        res += words[0][count]
         count++
     }
 }
